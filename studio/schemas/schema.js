@@ -3,7 +3,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
-import animal from "./animal";
+import banner from "./banner";
 import product from "./product";
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -14,7 +14,8 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
-    animal,
+
     product,
+    banner,
   ]),
 });
